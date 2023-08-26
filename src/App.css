@@ -35,3 +35,13 @@ body {
     border-radius: 1%;
 }
 
+.home-logo {
+    /* background-color: whitesmoke; */
+    margin: 10px;
+}
+
+.home-logo-bg {
+    
+    background-color: rgb(237, 245, 0);
+}
+

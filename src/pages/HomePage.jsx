@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 function HomePage() {
 
     return(
 
     <>
+   
     
     <Link to={'/beers'} className="link-home">
 
@@ -15,9 +17,9 @@ function HomePage() {
 
     <Link to={'/random-beer'} className="link-home">
 
-            <img className='img-home'src="https://images.pexels.com/photos/2599245/pexels-photo-2599245.jpeg" alt="" width={1000}/>
             <h2 className="text-home">RANDOM BEER</h2>
-            
+            <img className='img-home'src="https://images.pexels.com/photos/2599245/pexels-photo-2599245.jpeg" alt="" width={1000}/>
+    
     </Link>
 
     <Link to={'/new-beer'} className="link-home">
