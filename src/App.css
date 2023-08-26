@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+.App {
+    text-align: center;
+}
+
+.text-home {
+    writing-mode: vertical-rl;
+    color: rgb(237, 245, 0);
+    text-shadow: 1px 0 #1d1d1d, -1px 0 #1d1d1d, 0 1px #1d1d1d, 0 -1px #1d1d1d,
+    1px 1px #1d1d1d, -1px -1px #1d1d1d, 1px -1px #1d1d1d, -1px 1px #1d1d1d;
+    letter-spacing: 30px;
+    /* transform: rotate(90deg); */
+}
+
+.title-home {
+    color: rgb(237, 245, 0);
+    text-shadow: 1px 0 #1d1d1d, -1px 0 #1d1d1d, 0 1px #1d1d1d, 0 -1px #1d1d1d,
+    1px 1px #1d1d1d, -1px -1px #1d1d1d, 1px -1px #1d1d1d, -1px 1px #1d1d1d;
+    letter-spacing: 3px;
+}
+
+.link-home {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.img-home {
+    border-radius: 1%;
+}
+

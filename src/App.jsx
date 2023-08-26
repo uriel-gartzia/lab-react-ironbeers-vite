@@ -9,7 +9,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1>LAB | React IronBeers</h1>
+      <h1 className="title-home">LAB | React IronBeers</h1>
     <Routes>
       <Route path='/' element={ <HomePage />} />
       <Route path='/beers' element={ <AllBeersPage />} />
