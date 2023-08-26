@@ -1,5 +1,14 @@
-import Navbar from "../components/Navbar";
 
-function AddBeerPage() {}
+
+function AddBeerPage() {
+
+
+    return(
+
+        <>
+        
+        </>
+    )
+}
 
 export default AddBeerPage;
