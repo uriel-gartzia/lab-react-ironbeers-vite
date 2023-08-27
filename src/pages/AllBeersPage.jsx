@@ -17,10 +17,15 @@ useEffect (() => {
 
 //Aquí la llamada a la API
 const getBeersList = async () => {
-    const response = await axios.get("https://ih-beers-api2.herokuapp.com/beers")
-    console.log('Aquí debo recibir la lista de cervezas desde la API', response)
+    try {
+        const response = await axios.get("https://ih-beers-api2.herokuapp.com/beers")
+        console.log('Aquí debo recibir la lista de cervezas desde la API', response)
 
-    setBeersList(response.data)
+        setBeersList(response.data)  
+    } catch (error) {
+        console.log(error)
+    }
+   
 
 }
 
@@ -38,14 +43,18 @@ if (beersList === null) {
 
             return(
             <>
-            <Link to={`/beers/${eachBeer._id}`}>
-            <img src={eachBeer.image_url} alt="" width={50}/>
-            <h2>{eachBeer.name}</h2>
-            </Link>
-               
-               <p>{eachBeer.tagline}</p>
-               <p><b>Created by: </b>{eachBeer.contributed_by}</p>
-               <hr />
+            <div className="beers-card">
+                <Link to={`/beers/${eachBeer._id}`}>
+                    <img src={eachBeer.image_url} alt="" width={50}/>
+                    <h3 className="text-list">{eachBeer.name}</h3>
+                </Link>
+
+                <div className="tagline-list">
+                    <p>{eachBeer.tagline}</p>
+                    <p><b>Created by: </b>{eachBeer.contributed_by}</p>
+                </div>
+            </div>
+            <hr />
             </>
             )
             

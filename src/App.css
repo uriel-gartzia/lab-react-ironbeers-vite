@@ -9,6 +9,8 @@ body {
     text-align: center;
 }
 
+/* HOME */
+
 .text-home {
     writing-mode: vertical-rl;
     color: rgb(237, 245, 0);
@@ -17,6 +19,8 @@ body {
     letter-spacing: 30px;
     /* transform: rotate(90deg); */
 }
+
+
 
 .title-home {
     color: rgb(237, 245, 0);
@@ -44,4 +48,23 @@ body {
     
     background-color: rgb(237, 245, 0);
 }
+
+/* BEERS LIST */
+
+.beers-card {
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+    justify-content: space-around;
+}
+
+.text-list {
+    
+    color: rgb(237, 245, 0);
+    text-shadow: 1px 0 #1d1d1d, -1px 0 #1d1d1d, 0 1px #1d1d1d, 0 -1px #1d1d1d,
+    1px 1px #1d1d1d, -1px -1px #1d1d1d, 1px -1px #1d1d1d, -1px 1px #1d1d1d;
+    letter-spacing: 3px;
+}
+
+
 
